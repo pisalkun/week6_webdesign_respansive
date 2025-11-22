@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* MOBILE (default) */
+.header, .footer {
+  background: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.content, .sidebar {
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+/* MEDIUM (600px–900px) */
+@media (min-width: 600px) and (max-width: 900px) {
+  .main {
+    flex-direction: row;
+  }
+
+  .header, .footer {
+    padding: 25px;
+    font-size: 18px;
+  }
+
+  .content, .sidebar {
+    flex: 1;
+  }
+}
+
+/* LARGE (>900px) */
+@media (min-width: 900px) {
+  .main {
+    flex-direction: row;
+  }
+
+  .header, .footer {
+    padding: 30px;
+    font-size: 20px;
+  }
+
+  .content {
+    flex: 3;
+  }
+
+  .sidebar {
+    flex: 1;
+  }
+}

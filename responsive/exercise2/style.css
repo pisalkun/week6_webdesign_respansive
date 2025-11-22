@@ -1,0 +1,42 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #333;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hide mobile menu button in desktop */
+.menu-btn {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Mobile (<768px) */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;      /* hide horizontal menu */
+    flex-direction: column;
+    background: #444;
+    padding: 10px;
+  }
+
+  .menu-btn {
+    display: block;     /* show hamburger */
+  }
+}
+
+/* (Optional) JS needed to toggle menu */
